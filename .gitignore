@@ -1,32 +1,56 @@
-# Prerequisites
-*.d
+/**
+ * @name         Nezuko
+ * @description  Enjoy Discord over a calm peaceful lake under the northern lights.
+ * @donate       https://qiwi.com/n/SOL1O
+ * @source       https://github.com/s-ol-o
+ * @author       ソロ#0523
+ * @version      1.0 
+ */
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+@import url('https://rmkx.github.io/src/hideGuilds.css'); /*Comment line if you don't want servers list to hide | This moves it to the default position (you need to set its bg to transparent*/
+@import url('https://rmkx.github.io/src/hideMembers.css'); /*Comment line if you don't want servers' members to hide*/
+@import url('https://rmkx.github.io/src/hideChannels.css'); /*Comment line if you don't want servers' channels to hide*/
 
-# Precompiled Headers
-*.gch
-*.pch
+@import url('https://rmkx.github.io/Boreal/src/boreal.css'); /*Main CSS sheet*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*Put your font url here*/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+::-webkit-input-placeholder, body, button, input, select, textarea {
+    font-family: "Lato"; /*Change the font name you imported here*/
+}
 
-# Fortran module files
-*.mod
-*.smod
+:root {
+    --server-hiding-width: 50px; /*Amount that will be shown when the channels panel hides | Default 50px*/
+    --members-hiding-width: 53px; /*Amount that will be shown when the server's members panel hides | Default 53px*/
+    --showing-width: 252px; /*Amount that will be shown when the panels show | Default 252px*/
+    --hidden-background: transparent; /*Background of the elements when hidden*/
+    /*Background of the elements when showing*/
+    --showing-background: linear-gradient(195deg, rgba(155, 92, 171,0.39537821964723385) 14%, rgba(0,241,255,0.3785714969581583) 35%, rgba(23,114,246,0.22170875186011907) 59%, rgba(15,8,74,0.2049020291710434) 87%, rgba(6,1,42,0.0536415249693627) 96%);
+    
+    --background-image: url(https://sun1-93.userapi.com/impg/Y7Y3To4Q8f5tn72J7aMeBf5pB-IDD_F1ynmcpQ/mmNJSzfEUic.jpg?size=1919x1079&quality=96&sign=478c6fc2bebcd609c600e5f26af104d0&type=album); /*Changes the background image*/
+    --bg-blur: 0px; /*changes the blur of the background image*/
+    --main-accent: rgb(220, 146, 247); /*Main accent of the theme for little elements*/
+    --main-accent-rgb: 255, 255, 255; /*RGB code of main accent for some elements, change this if you change main accent*/
+    --popout-blur: 2px; /*Changes the blur of elements that appear on screen*/
+    --bg-opacity: 1; /*Changes the opacity of the background*/
+    --links: rgb(255, 112, 253); /*Color for links*/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+    --panel-boxes: rgba(0, 0, 0, 0.55); /*Changes the background of the surrounded panels*/
+    --second-panel-bg: rgba(0, 0, 0, 0.8); /*changes the bg of panels that come out, like right clicking on a user*/
+    --panel-border: 0px solid rgb(70, 69, 69); /*Changes the borders of the surrounded panels*/
+    --panel-border-radius: 8px; /*Changes the radius of the surrounded panels*/
 
-# Executables
-*.exe
-*.out
-*.app
+    --chat-hover: rgb(0, 0, 0, 0.2); /*Message background when hovering*/
+
+    --buttons-background: rgba(0, 0, 0, 0.3); /*Changes the color of the buttons*/
+    --buttons-border: 0px solid rgb(70, 69, 69); /*Changes the color of the buttons*/
+    --buttons-radius: 8px; /*Changes the radius of the buttons*/
+    --buttons-color: white; /*Changes the color of the button text*/
+
+    /*Changes the color of the background when hovering*/
+    --element-hovered: linear-gradient(195deg, rgba(155, 92, 171,0.39537821964723385) 14%, rgba(0,241,255,0.3785714969581583) 35%, rgba(23,114,246,0.22170875186011907) 59%, rgba(15,8,74,0.2049020291710434) 87%, rgba(6,1,42,0.0536415249693627) 96%); 
+    /*Code for the gradient*/
+    --underline-gradient: linear-gradient(195deg, rgba(155, 92, 171,0.39537821964723385) 14%, rgba(0,241,255,0.3785714969581583) 35%, rgba(23,114,246,0.22170875186011907) 59%, rgba(15, 8, 74, 0.473) 87%);
+
+    --settings-width: 60%; /*Width for the settings window*/
+    --settings-heigth: 85%; /*Width for the settings window*/
+}
