@@ -6,9 +6,9 @@
  * @version      1.0.1
  */
 
-@import url('https://rmkx.github.io/src/transparentDiscord.css');
-@import url('https://rmkx.github.io/src/settingsIcons.css');
-@import url('https://rmkx.github.io/src/customBadges.css');
+@import url('https://raw.githubusercontent.com/s-ol-o/s-ol-o/main/new%205.css');
+@import url('https://raw.githubusercontent.com/s-ol-o/s-ol-o/main/new%206.css');
+@import url('https://raw.githubusercontent.com/s-ol-o/s-ol-o/main/new%207.css');
 
 :root {
     --server-hiding-width: 2.5%; /*Amount that will be shown when the channels panel hides | Default 50px*/
